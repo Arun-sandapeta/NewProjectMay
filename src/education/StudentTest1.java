@@ -10,6 +10,11 @@ public class StudentTest1 {
         student.street="miyapur";
 
 
+        Student ref1 = student;
+
+        System.out.println(ref1);
+
+
         System.out.println(student.name);
 
 
