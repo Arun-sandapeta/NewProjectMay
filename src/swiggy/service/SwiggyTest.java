@@ -28,12 +28,18 @@ public class SwiggyTest {
       restaurant.menu=menu;
 
 
+
+
       SwiggyService swiggyService = new SwiggyService();
       Otp otp = swiggyService.registerRestaurant(restaurant);
+      Otp inputotp = otp;
 
-      System.out.println(otp);
 
-    swiggyService.validate(otp);
+
+  Otp response =  swiggyService.validate(inputotp);
+      System.out.println(response);
+
+//   Restaurant REST = swiggyService.getRestaurant(restaurant);
        
    }
 
