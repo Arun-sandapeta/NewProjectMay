@@ -1,9 +1,6 @@
 package swiggy.service;
 
-import swiggy.model.Address;
-import swiggy.model.Menu;
-import swiggy.model.Otp;
-import swiggy.model.Restaurant;
+import swiggy.model.*;
 
 public class SwiggyTest {
 
@@ -36,7 +33,7 @@ public class SwiggyTest {
 
 
 
-  Otp response =  swiggyService.validate(inputotp);
+  String response = swiggyService.validate(inputotp, restaurant.user);
       System.out.println(response);
 
 //   Restaurant REST = swiggyService.getRestaurant(restaurant);

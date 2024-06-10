@@ -7,6 +7,10 @@ public class Otp {
     public Date creationTime;
     public Date endTime;
 
+    public String mobile;
+
+
+
     @Override
     public String toString() {
         return "Otp{" +
