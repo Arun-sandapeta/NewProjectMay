@@ -1,6 +1,6 @@
-package inheritence;
+package inheritence.product;
 
-public class Laptop extends Product{
+public class Laptop extends Product {
     private String processor;
     private String ram;
 
@@ -15,12 +15,22 @@ public class Laptop extends Product{
         return processor;
     }
 
+    public void setProcessor(String processor) {
+        this.processor = processor;
+    }
+
     public String getRam() {
         return ram;
     }
+
+    public void setRam(String ram) {
+        this.ram = ram;
+    }
     public String laptopDetails(){
-        System.out.println("processor: "+ processor);
-        System.out.println("RAM : " + ram);
+        System.out.println("processor: "+processor);
+        System.out.println("RAM : "+ ram );
         return "";
     }
 }
+
+
